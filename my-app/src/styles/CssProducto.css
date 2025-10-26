@@ -1,0 +1,135 @@
+body.route-productos .img-fondos {
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('../images/samu4k.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    padding: 40px 0; 
+    color: #fff;
+}
+
+.titulo {
+    text-align: center; 
+    color: #fff; 
+    font-size: 48px; 
+    margin-bottom: 10px; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.subtitulo {
+    text-align: center; 
+    color: #e6e6e6; 
+    font-size: 22px; 
+    margin-bottom: 30px; 
+}
+
+.carrito-container {
+      position: relative;
+      display: inline-block;
+}
+#contador {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ff3b3b;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.img-fondos .container {
+    padding: 0 16px;
+}
+.img-fondos .row {
+    gap: 24px;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    background: #fff;
+}
+
+.card .card-img-top {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 220px !important;
+    object-fit: contain !important;
+    display: block !important;
+    background: #000; 
+}
+
+.card-body {
+    padding: 16px;
+    color: #222;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.card .price {
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.btn-primary.btn-sm {
+    background: #0e85d4;
+    border-color: #0e85d4;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+.btn-primary.btn-sm:hover {
+    background: #096aa8;
+    border-color: #096aa8;
+}
+
+.card a { text-decoration: none; color: inherit; }
+.card a:hover { text-decoration: none; }
+
+@media (max-width: 992px) {
+    .card .card-img-top { height: 200px; }
+    .titulo { font-size: 40px; }
+}
+
+@media (max-width: 768px) {
+    .card .card-img-top { height: 160px; }
+    .card { margin-bottom: 18px; }
+    .titulo { font-size: 34px; }
+    .subtitulo { font-size: 18px; }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.card-body .btn {
+  margin-top: auto; /* fuerza al botón a quedar al fondo */
+}
+
+.blog-container, .container { max-width: 1200px; margin: 0 auto; }
+
+.img-fondos .card { background: rgba(255,255,255,0.98); }

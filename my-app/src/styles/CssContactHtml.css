@@ -1,0 +1,88 @@
+body.route-contacto .img-fondo {
+    background-image: url('../images/mario.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    background-color: #8bbef8;
+    width: 500px;
+    padding: 30px; 
+    border: 1px solid #000000;
+    margin: 50px auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 750px; 
+    box-sizing: border-box; 
+}
+
+.contact-box img {
+    display: block; 
+    margin: 0 auto -10px; 
+    width: 150px; 
+    max-width: 100%;
+}
+
+.contact-box h2 {
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #333;
+    font-size: 26px;
+}
+
+.contact-box .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(112, 173, 243);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contact-box button:hover {
+    background-color: rgb(112, 173, 243);
+    color: #fff;
+}
+
+.contact-box a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .contact-box {
+        width: 95%;
+        padding: 20px;
+        height: auto;
+    }
+}

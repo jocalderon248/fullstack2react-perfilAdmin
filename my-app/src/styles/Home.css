@@ -1,0 +1,83 @@
+.contenedor-flex {
+    display: flex; 
+    justify-content: center;   
+    align-items: flex-start;   
+    gap: 40px;                 
+    margin: 30px 10px;
+    flex-wrap: wrap; 
+}
+
+.cajilla-box {
+    background-color: #7593d4; 
+    flex: 1 1 300px;  
+    max-width: 450px; 
+    padding: 20px; 
+    border: 1px solid #000000; 
+    min-height: 400px; 
+    box-sizing: border-box;
+}
+
+.cajilla2-box {
+    background-color: #7593d4; 
+    flex: 1 1 400px;   
+    max-width: 600px; 
+    padding: 20px; 
+    border: 1px solid #000000; 
+    min-height: 250px; 
+    box-sizing: border-box;
+}
+
+.cajilla2-box p {
+    font-size: 1.5rem; 
+    line-height: 1.6; 
+    color: #000000; 
+    text-align: center;
+}
+
+body.route-home .img-fondo {
+    background-image: url('../images/balatro.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    padding: 20px; 
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+img {
+    width: 75px;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h3 {
+    text-align: center;
+    color: #000000;
+}
+
+
+@media (min-width: 768px) {
+    .contenido {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenedor-flex {
+        gap: 60px; 
+    }
+}
+
+.wrapper {
+    max-width: 1200px;  
+    margin: 0 auto;     
+    padding: 0 20px;
+}
